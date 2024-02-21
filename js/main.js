@@ -6,13 +6,13 @@ date.innerHTML = today.toLocaleDateString('ar-EG', options);
 
 // Cities
 const cities = {
-  "الدقاهلية": "Ad Daqahlīyah",
+  "الدقهلية": "Ad Daqahlīyah",
   "البحر الاحمر": "Al Baḩr al Aḩmar",
   "البحيرة": "Al Buḩayrah",
   "الفيوم": "Al Fayyūm",
   "الغربية": "Al Gharbīyah",
   "الأسكندرية": "Alexandria",
-  "الإسماعيلية": "Al Ismā'īlīyah",
+  "الإسماعيلية": "Ismailia",
   "الجيزة": "Giza",
   "المنيا": "Al Minyā",
   "المنوفية": "Al Minūfīyah",

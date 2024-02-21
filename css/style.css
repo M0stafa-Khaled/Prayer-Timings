@@ -6,7 +6,9 @@
 
 body {
   font-family: "Noto Kufi Arabic", sans-serif;
-  background-color: indigo;
+  background-image: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   min-height: 100vh;
 }
