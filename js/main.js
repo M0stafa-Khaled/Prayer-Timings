@@ -6,14 +6,14 @@ date.innerHTML = today.toLocaleDateString('ar-EG', options);
 
 // Cities
 const cities = {
-  "الدقاهلية": "Ad Daqahlīyah",
+  "الدقهلية": "Ad Daqahlīyah",
   "البحر الاحمر": "Al Baḩr al Aḩmar",
   "البحيرة": "Al Buḩayrah",
   "الفيوم": "Al Fayyūm",
   "الغربية": "Al Gharbīyah",
   "الأسكندرية": "Alexandria",
-  "الإسماعيلية": "Al Ismā'īlīyah",
-  "الجيزة": "Al Jīzah",
+  "الإسماعيلية": "Ismailia",
+  "الجيزة": "Giza",
   "المنيا": "Al Minyā",
   "المنوفية": "Al Minūfīyah",
   "القليوبية": "Al Qalyūbīyah",
@@ -25,7 +25,7 @@ const cities = {
   "أسوان": "Aswān",
   "أسيوط": "Asyūţ",
   "بنى سويف": "Banī Suwayf",
-  "بورسعيد": "Būr Sa‘īd	",
+  "بورسعيد": "Port Said",
   "دمياط": "Dumyāţ",
   "جنوب سيناء": "Janūb Sīnā'",
   "كفر الشيخ": "Kafr ash Shaykh",
@@ -40,7 +40,6 @@ let citiesList = document.querySelector("#cities");
 for (const [city, value] of Object.entries(cities)) {
   citiesList.innerHTML += `<option value="${value}">${city}</option>`
 };
-
 const tiems = {
   "الفجر": "Fajr",
   "الشروق": "Sunrise",
@@ -51,7 +50,6 @@ const tiems = {
 }
 
 // Get the selected value
-
 citiesList.addEventListener("change", (city) => {
   // Send request to get times
   axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${city.target.value}&country=eg`)
@@ -87,8 +85,6 @@ citiesList.addEventListener("change", (city) => {
       result.style.height = "auto";
     })
 })
-
 // Get year to footer
-
 let year = document.querySelector("#year");
 year.innerHTML = new Date().getFullYear();

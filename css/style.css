@@ -6,8 +6,18 @@
 
 body {
   font-family: "Noto Kufi Arabic", sans-serif;
-  background-color: indigo;
+  background-image: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 15%;
+  background-size: cover;
   color: white;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
 }
 
@@ -16,7 +26,6 @@ select {
   border: none;
   width: 200px;
   border-radius: 10px;
-  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 
@@ -26,14 +35,12 @@ select {
   transition: 1s;
   min-height: 50vh;
   opacity: 0;
-
 }
 
 .show {
   animation: 0.5s fedeIn forwards;
   animation-delay: 0.5s;
 }
-
 
 @keyframes fedeIn {
   to {

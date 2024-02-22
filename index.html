@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Author" content="Mostafa Khaled">
   <meta name="Description" content="مواقيت الصلاة">
-  <meta name="Keywords" content="مواقيت الصلاة, الصلاة, المواقيت, موعد اذان الظهر, موعد اذان  العصر, مزعد اذان الفجر, موعد اذان المغرب, موعد اذان العشاء, مواقيت الصلاة, موعد الصلاة, مواقيت الصلاة اليوم">
+  <meta name="Keywords"
+    content="مواقيت الصلاة, الصلاة, المواقيت, موعد اذان الظهر, موعد اذان  العصر, مزعد اذان الفجر, موعد اذان المغرب, موعد اذان العشاء, مواقيت الصلاة, موعد الصلاة, مواقيت الصلاة اليوم">
   <title>مواقيت الصلاة</title>
   <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
   <!-- Bootstrap -->
@@ -18,30 +19,29 @@
 </head>
 
 <body dir="rtl">
-
   <main>
     <div class="container">
       <header class="pt-3 pe-4 pb-2 border-bottom">
         <h1 class="mb-4 text-warning">مواقيت الصلاة</h1>
         <p class="mb-1 fs-5" id="date">الاثنين 19 فبراير</p>
       </header>
-      <section class="my-4 d-flex justify-content-center flex-column align-items-center ">
-        <div class="w-50 ">
+      <section class="my-4">
+        <div class="w-50 m-auto">
           <div class="d-flex flex-column flex-sm-row align-items-center mb-3 justify-content-center">
             <label for="cities" class="mx-3 fs-5 p-3">المدينة:</label>
-            <select name="cities" id="cities" class="p-2">
+            <select name="cities" id="cities" class="p-2 shadow-lg">
               <option class="city" disabled selected hidden>المدينة</option>
             </select>
           </div>
         </div>
         <div id="result" class="result row mt-1 gy-3 pt-2"></div>
       </section>
-      <footer>
-        <div class="text-center mt-3 mb-0">جميع الحقوق محفوظة © <span id="year"></span>
+      <footer dir="ltr">
+        <div class="text-center mt-3 mb-0">All Copyright Reserved © <span id="year"></span>
           <div class="fw-medium p-2">
-            <span class="text-danger">&#60;</span><a href="https://www.facebook.com/moo.v4" target="_blank"
-              class="text-decoration-none text-warning">Mostafa
-              Khaled</a><span class="text-danger">/&#62;</span>
+            <a href="https://www.facebook.com/moo.v4" target="_blank" class="text-decoration-none text-warning"><span
+                class="text-danger">&#60;/</span>Mostafa
+              Khaled<span class="text-danger">&#62;</span></a>
           </div>
         </div>
       </footer>
