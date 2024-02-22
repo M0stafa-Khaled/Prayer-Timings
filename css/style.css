@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-position: 15%;
   background-size: cover;
+  background-position: left;
   color: white;
   min-height: 100vh;
 }
