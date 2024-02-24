@@ -33,10 +33,10 @@ const cities = {
   "مطروح": "Maţrūḩ",
   "قنا": "Qinā",
   "شمال سيناء": "Shamāl Sīnā'",
-  "سوهاج": "Sūhāj",
+  "سوهاج": "Sohag",
   "شرم الشيخ": "Sharm ash Shaykh",
-  "مدينة العاشر من رمضان": "10th of Ramadan City",
-  "مدينة السادس من أكتوبر": "Sixth of October City",
+  " العاشر من رمضان": "10th of Ramadan City",
+  " السادس من أكتوبر": "Sixth of October City",
   "القاهرة الجديدة": "New Cairo",
   "حلوان": "Helwan",
 };
@@ -59,6 +59,7 @@ const tiems = {
 function getPrayerTimesByLocation(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
+  console.log(lat, lon)
   axios.get(`https://api.aladhan.com/v1/timings?latitude=${lat}&longitude=${lon}&method=5`)
     .then(GetPrayerTimes)
 }
@@ -73,7 +74,7 @@ citiesList.addEventListener("change", (city) => {
   // Send request to get times
   axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${city.target.value}&country=eg&method=5`)
     .then(GetPrayerTimes)
-    .catch((error) => alert("Please check your internet connection and try again"));
+    .catch((error) => alert(" Error Connection "));
 })
 
 // Function to get times from API
