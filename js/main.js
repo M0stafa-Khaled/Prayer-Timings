@@ -59,7 +59,7 @@ const tiems = {
 function getPrayerTimesByLocation(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
-  axios.get(`http://api.aladhan.com/v1/timings?latitude=${lat}&longitude=${lon}&method=5`)
+  axios.get(`https://api.aladhan.com/v1/timings?latitude=${lat}&longitude=${lon}&method=5`)
     .then(GetPrayerTimes)
 }
 navigator.geolocation.getCurrentPosition(getPrayerTimesByLocation, showError);
