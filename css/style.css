@@ -8,9 +8,16 @@ body {
   font-family: "Noto Kufi Arabic", sans-serif;
   background-image: url("./bg.jpg");
   background-repeat: no-repeat;
-  background-position: 15%;
+  background-position: 18%;
   background-size: cover;
   color: white;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
 }
 
@@ -22,12 +29,29 @@ select {
   width: 100%;
 }
 
+.title-prayer {
+  border-bottom: 5px solid;
+  padding: 10px;
+  background-color: brown;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: 1.5s;
+  opacity: 0;
+}
+
+.error {
+  background-color: brown;
+}
+
 .result {
   border-radius: 10px;
   overflow: hidden;
   transition: 1s;
-  min-height: 50vh;
   opacity: 0;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 .show {
@@ -37,7 +61,6 @@ select {
 
 @keyframes fedeIn {
   to {
-    scale: 1;
     opacity: 1;
   }
 }
