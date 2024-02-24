@@ -73,7 +73,7 @@ citiesList.addEventListener("change", (city) => {
   // Send request to get times
   axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${city.target.value}&country=eg&method=5`)
     .then(GetPrayerTimes)
-    .catch(() => alert("Please check your internet connection and try again"));
+    .catch((error) => alert("Please check your internet connection and try again"));
 })
 
 // Function to get times from API
