@@ -21,6 +21,7 @@
 <body dir="rtl">
   <main>
     <div class="container">
+      <div class="mapholder" id="mapholder"></div>
       <header class="pt-3 pe-4 pb-2 border-bottom">
         <h1 class="mb-4 text-warning">مواقيت الصلاة</h1>
         <p class="mb-1 fs-5" id="date">الاثنين 19 فبراير</p>
@@ -34,14 +35,16 @@
             </select>
           </div>
         </div>
-        <div id="result" class="result row mt-1 gy-3 pt-2"></div>
+        <h2 class="text-center my-3 title-prayer show">مواقيت الصلاة:</h2>
+        <div id="result" class="result row mt-1 gy-3 pt-2 justify-content-center">
+          <h2 class="error text-center p-2 rounded-5 text-warning lh-base w-75 d-none"></h2>
+        </div>
       </section>
       <footer dir="ltr" class="mb-2">
         <div class="text-center mt-3 mb-0">All Copyright Reserved © <span id="year"></span>
           <div class="fw-medium p-2">
             <a href="https://www.facebook.com/moo.v4" target="_blank" class="text-decoration-none text-warning"><span
-                class="text-danger">&#60;/</span>Mostafa
-              Khaled<span class="text-danger">&#62;</span></a>
+                class="text-danger">&#60;/</span>Mostafa Khaled<span class="text-danger">&#62;</span></a>
           </div>
         </div>
       </footer>
