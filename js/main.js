@@ -114,8 +114,8 @@ function showError(error) {
   errorShow.classList.remove("d-none");
   switch (error.code) {
     case error.PERMISSION_DENIED:
-      errorShow.innerHTML = " رفض المستخدم طلب تحديد الموقع الجغرافى تلقائيا لعرض الوقت اختر الموقع الخاص بك من القائمة"
-      result.classList.add("show")
+      errorShow.innerHTML = " رفض المستخدم طلب تحديد الموقع الجغرافى تلقائيا لعرض الوقت اسمح بتحديد الموقع او اختر المدينة";
+      result.classList.add("show");
       break;
     case error.POSITION_UNAVAILABLE:
       result.innerHTML = " معلومات الموقع غير متوفرة"
