@@ -4,9 +4,21 @@
   transition: 0.2s;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 1, 0.84);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: brown;
+}
+
 body {
   font-family: "Noto Kufi Arabic", sans-serif;
-  background-image: url("./bg.jpg");
+  background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-position: 18%;
   background-size: cover;
